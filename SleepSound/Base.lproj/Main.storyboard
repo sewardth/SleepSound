@@ -22,9 +22,6 @@
                                     <color key="titleColor" red="1" green="0.046370147005842632" blue="0.022965633391526907" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="177" y="280" width="46" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="playSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HYr-I2-M2J"/>
                                 </connections>
@@ -35,9 +32,6 @@
                                     <color key="titleColor" red="1" green="0.11282177846115504" blue="0.074801331041307484" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="177" y="280" width="46" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="stopSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nuP-CG-SZK"/>
                                 </connections>
