@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer:AVAudioPlayer!
     var pickTime = NSDate()
@@ -45,19 +45,12 @@ class ViewController: UIViewController {
     @IBAction func playSound(sender: UIButton) {
         playButton.hidden = true
         stopButton.hidden = false
-        var currentTimeParts = getDateComponents(NSDate())
-        var pickTimeParts = getDateComponents(pickTime)
-        while (currentTimeParts["hour"] != pickTimeParts["hour"]) && (currentTimeParts["minutes"] != pickTimeParts["minutes"]){
-            println("playing sound")
-            audioPlayer.play()
-            currentTimeParts = getDateComponents(NSDate())
-        }
-        println("restraints match")
-        
-        
-        
-        
+        let fileDuration = audioPlayer.duration
+        audioPlayer.numberOfLoops = calculateLoops(Int(fileDuration))
+        audioPlayer.delegate = self
+        audioPlayer.play()
     }
+    
 
     @IBAction func getDate(sender: UIDatePicker) {
         pickTime = sender.date
@@ -76,5 +69,43 @@ class ViewController: UIViewController {
         return timeParts
         
     }
+    
+    func calculateLoops(fileDuration :Int)->Int{
+        let currentTimeParts = getDateComponents(NSDate())
+        let pickTimeParts = getDateComponents(pickTime)
+        var hours: Int
+        var minutes: Int
+        
+        if pickTimeParts["hour"] < currentTimeParts["hour"]
+        {
+            hours = (24 - currentTimeParts["hour"]!) + pickTimeParts["hour"]!
+        }
+        else
+        {
+            hours = pickTimeParts["hour"]! - currentTimeParts["hour"]!
+        }
+        
+        if pickTimeParts["minutes"] >= currentTimeParts["minutes"]
+        {
+            minutes = pickTimeParts["minutes"]! - currentTimeParts["minutes"]!
+        }
+        else
+        {
+            minutes = (60 - currentTimeParts["minutes"]!) + pickTimeParts["minutes"]!
+        }
+        
+        let totalDuration = (hours * 60 * 60) + (minutes * 60)
+        let loops: Int = totalDuration / fileDuration
+        
+        return loops
+    }
+    
+    func audioPlayerDidFinishPlaying(audioPlayer: AVAudioPlayer!, successfully flag: Bool)
+    {
+        stopButton.hidden = true
+        playButton.hidden = false
+    }
+    
+
 }
 

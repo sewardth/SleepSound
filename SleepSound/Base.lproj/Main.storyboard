@@ -57,7 +57,7 @@
                                 </connections>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="fgD-Wg-XPG" secondAttribute="centerY" constant="5" id="4rC-rp-3tl"/>
                             <constraint firstAttribute="centerX" secondItem="fgD-Wg-XPG" secondAttribute="centerX" id="751-Um-Zf0"/>
@@ -99,6 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="27" y="282"/>
         </scene>
     </scenes>
 </document>
