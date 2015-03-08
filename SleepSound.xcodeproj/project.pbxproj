@@ -13,6 +13,7 @@
 		E27892A21AABD324005F4561 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27892A11AABD324005F4561 /* Images.xcassets */; };
 		E27892A51AABD324005F4561 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27892A31AABD324005F4561 /* LaunchScreen.xib */; };
 		E27892B11AABD324005F4561 /* SleepSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27892B01AABD324005F4561 /* SleepSoundTests.swift */; };
+		E27892BD1AABD63A005F4561 /* red_noise.wav in Resources */ = {isa = PBXBuildFile; fileRef = E27892BC1AABD63A005F4561 /* red_noise.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E27892AA1AABD324005F4561 /* SleepSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27892AF1AABD324005F4561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27892B01AABD324005F4561 /* SleepSoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSoundTests.swift; sourceTree = "<group>"; };
+		E27892BC1AABD63A005F4561 /* red_noise.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = red_noise.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		E27892981AABD324005F4561 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E27892BC1AABD63A005F4561 /* red_noise.wav */,
 				E27892991AABD324005F4561 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +164,11 @@
 				TargetAttributes = {
 					E27892941AABD324005F4561 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					E27892A91AABD324005F4561 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -193,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E27892A01AABD324005F4561 /* Main.storyboard in Resources */,
+				E27892BD1AABD63A005F4561 /* red_noise.wav in Resources */,
 				E27892A51AABD324005F4561 /* LaunchScreen.xib in Resources */,
 				E27892A21AABD324005F4561 /* Images.xcassets in Resources */,
 			);
@@ -339,6 +348,7 @@
 				INFOPLIST_FILE = SleepSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,6 +359,7 @@
 				INFOPLIST_FILE = SleepSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -405,6 +416,7 @@
 				E27892B61AABD324005F4561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E27892B71AABD324005F4561 /* Build configuration list for PBXNativeTarget "SleepSoundTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +425,7 @@
 				E27892B91AABD324005F4561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
