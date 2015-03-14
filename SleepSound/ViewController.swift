@@ -13,6 +13,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer:AVAudioPlayer!
     var pickTime = NSDate()
+
     
    
     @IBOutlet weak var playButton: UIButton!
@@ -27,6 +28,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         if  var filePath = NSBundle.mainBundle().pathForResource("red_noise", ofType: "wav")
         {
             var filePathUrl = NSURL.fileURLWithPath(filePath)
+            //var session: AVAudioSession = AVAudioSession.sharedInstance();
+            //session.setCategory(AVAudioSessionCategoryPlayback, error: nil)
             audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
         }
             
