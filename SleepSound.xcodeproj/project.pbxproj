@@ -14,6 +14,10 @@
 		E27892A51AABD324005F4561 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27892A31AABD324005F4561 /* LaunchScreen.xib */; };
 		E27892B11AABD324005F4561 /* SleepSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27892B01AABD324005F4561 /* SleepSoundTests.swift */; };
 		E27892BD1AABD63A005F4561 /* red_noise.wav in Resources */ = {isa = PBXBuildFile; fileRef = E27892BC1AABD63A005F4561 /* red_noise.wav */; };
+		E27936C91AD9981C0068FA7F /* Fantasy-Sleeping_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = E27936C81AD9981C0068FA7F /* Fantasy-Sleeping_Moon.png */; };
+		E27936CB1AD99B430068FA7F /* Fantasy-Sleeping_Moonx1.png in Resources */ = {isa = PBXBuildFile; fileRef = E27936CA1AD99B430068FA7F /* Fantasy-Sleeping_Moonx1.png */; };
+		E27936CD1AD99E4D0068FA7F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E27936CC1AD99E4D0068FA7F /* background.png */; };
+		E27936CF1AD9A1B60068FA7F /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = E27936CE1AD9A1B60068FA7F /* background2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		E27892AF1AABD324005F4561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27892B01AABD324005F4561 /* SleepSoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSoundTests.swift; sourceTree = "<group>"; };
 		E27892BC1AABD63A005F4561 /* red_noise.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = red_noise.wav; sourceTree = "<group>"; };
+		E27936C81AD9981C0068FA7F /* Fantasy-Sleeping_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fantasy-Sleeping_Moon.png"; sourceTree = "<group>"; };
+		E27936CA1AD99B430068FA7F /* Fantasy-Sleeping_Moonx1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fantasy-Sleeping_Moonx1.png"; sourceTree = "<group>"; };
+		E27936CC1AD99E4D0068FA7F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		E27936CE1AD9A1B60068FA7F /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,10 @@
 		E27892981AABD324005F4561 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E27936CE1AD9A1B60068FA7F /* background2.png */,
+				E27936CC1AD99E4D0068FA7F /* background.png */,
+				E27936CA1AD99B430068FA7F /* Fantasy-Sleeping_Moonx1.png */,
+				E27936C81AD9981C0068FA7F /* Fantasy-Sleeping_Moon.png */,
 				E27892BC1AABD63A005F4561 /* red_noise.wav */,
 				E27892991AABD324005F4561 /* Info.plist */,
 			);
@@ -203,8 +215,12 @@
 			files = (
 				E27892A01AABD324005F4561 /* Main.storyboard in Resources */,
 				E27892BD1AABD63A005F4561 /* red_noise.wav in Resources */,
+				E27936CD1AD99E4D0068FA7F /* background.png in Resources */,
 				E27892A51AABD324005F4561 /* LaunchScreen.xib in Resources */,
+				E27936CF1AD9A1B60068FA7F /* background2.png in Resources */,
+				E27936C91AD9981C0068FA7F /* Fantasy-Sleeping_Moon.png in Resources */,
 				E27892A21AABD324005F4561 /* Images.xcassets in Resources */,
+				E27936CB1AD99B430068FA7F /* Fantasy-Sleeping_Moonx1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

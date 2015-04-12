@@ -25,6 +25,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
         playButton.hidden = false
         stopButton.hidden = true
+
+        
         if  var filePath = NSBundle.mainBundle().pathForResource("red_noise", ofType: "wav")
         {
             var filePathUrl = NSURL.fileURLWithPath(filePath)
