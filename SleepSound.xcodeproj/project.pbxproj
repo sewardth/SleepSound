@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22981381ADC883300B579E1 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = E22981361ADC883300B579E1 /* start.png */; };
+		E22981391ADC883300B579E1 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = E22981371ADC883300B579E1 /* stop.png */; };
+		E229813D1ADC8FF700B579E1 /* brown_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E229813C1ADC8FF700B579E1 /* brown_noise.mp3 */; };
 		E278929B1AABD324005F4561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278929A1AABD324005F4561 /* AppDelegate.swift */; };
 		E278929D1AABD324005F4561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278929C1AABD324005F4561 /* ViewController.swift */; };
 		E27892A01AABD324005F4561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278929E1AABD324005F4561 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E22981361ADC883300B579E1 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		E22981371ADC883300B579E1 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		E229813C1ADC8FF700B579E1 /* brown_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brown_noise.mp3; sourceTree = "<group>"; };
 		E27892951AABD324005F4561 /* SleepSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27892991AABD324005F4561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E278929A1AABD324005F4561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 		E27892981AABD324005F4561 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E229813C1ADC8FF700B579E1 /* brown_noise.mp3 */,
+				E22981361ADC883300B579E1 /* start.png */,
+				E22981371ADC883300B579E1 /* stop.png */,
 				E27936CE1AD9A1B60068FA7F /* background2.png */,
 				E27936CC1AD99E4D0068FA7F /* background.png */,
 				E27936CA1AD99B430068FA7F /* Fantasy-Sleeping_Moonx1.png */,
@@ -214,6 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E27892A01AABD324005F4561 /* Main.storyboard in Resources */,
+				E22981391ADC883300B579E1 /* stop.png in Resources */,
+				E22981381ADC883300B579E1 /* start.png in Resources */,
+				E229813D1ADC8FF700B579E1 /* brown_noise.mp3 in Resources */,
 				E27892BD1AABD63A005F4561 /* red_noise.wav in Resources */,
 				E27936CD1AD99E4D0068FA7F /* background.png in Resources */,
 				E27892A51AABD324005F4561 /* LaunchScreen.xib in Resources */,

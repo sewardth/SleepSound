@@ -27,7 +27,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         stopButton.hidden = true
 
         
-        if  var filePath = NSBundle.mainBundle().pathForResource("red_noise", ofType: "wav")
+        if  var filePath = NSBundle.mainBundle().pathForResource("brown_noise", ofType: "mp3")
         {
             var filePathUrl = NSURL.fileURLWithPath(filePath)
             //var session: AVAudioSession = AVAudioSession.sharedInstance();
@@ -50,7 +50,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func playSound(sender: UIButton) {
         playButton.hidden = true
         stopButton.hidden = false
-        let fileDuration = audioPlayer.duration
+        var fileDuration = audioPlayer.duration
         audioPlayer.numberOfLoops = calculateLoops(Int(fileDuration))
         audioPlayer.delegate = self
         audioPlayer.play()
@@ -68,16 +68,16 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func getDateComponents (date:NSDate)->Dictionary<String, Int>!{
-        let calendar = NSCalendar.currentCalendar()
-        let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute, fromDate:  date)
-        let timeParts = ["hour":components.hour, "minutes":components.minute]
+        var calendar = NSCalendar.currentCalendar()
+        var components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute, fromDate:  date)
+        var timeParts = ["hour":components.hour, "minutes":components.minute]
         return timeParts
         
     }
     
     func calculateLoops(fileDuration :Int)->Int{
-        let currentTimeParts = getDateComponents(NSDate())
-        let pickTimeParts = getDateComponents(pickTime)
+        var currentTimeParts = getDateComponents(NSDate())
+        var pickTimeParts = getDateComponents(pickTime)
         var hours: Int
         var minutes: Int
         
@@ -99,8 +99,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             minutes = (60 - currentTimeParts["minutes"]!) + pickTimeParts["minutes"]!
         }
         
-        let totalDuration = (hours * 60 * 60) + (minutes * 60)
-        let loops: Int = totalDuration / fileDuration
+        var totalDuration = (hours * 60 * 60) + (minutes * 60)
+        var loops: Int = totalDuration / fileDuration
         
         return loops
     }

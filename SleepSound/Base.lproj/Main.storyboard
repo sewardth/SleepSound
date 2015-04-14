@@ -16,48 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2.png" translatesAutoresizingMaskIntoConstraints="NO" id="joJ-RA-3PO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ml2-Jc-HgF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="405" height="600"/>
+                                    <rect key="frame" x="-4" y="159" width="409" height="543"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-Wg-XPG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-Wg-XPG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Play">
-                                    <color key="titleColor" red="1" green="0.046370147005842632" blue="0.022965633391526907" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="start.png">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="96" y="267" width="208" height="56"/>
+                                </variation>
                                 <connections>
                                     <action selector="playSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HYr-I2-M2J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlZ-nV-7mB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlZ-nV-7mB">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Stop">
+                                <state key="normal" image="stop.png">
                                     <color key="titleColor" red="1" green="0.11282177846115504" blue="0.074801331041307484" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="95" y="267" width="212" height="56"/>
+                                </variation>
                                 <connections>
                                     <action selector="stopSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nuP-CG-SZK"/>
                                 </connections>
                             </button>
-                            <datePicker opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hy0-ee-3wz">
+                            <datePicker opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="hy0-ee-3wz">
                                 <rect key="frame" x="-160" y="-81" width="320" height="162"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <date key="date" timeIntervalSinceReferenceDate="447472767.28438503">
                                     <!--2015-03-08 01:59:27 +0000-->
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="82" width="400" height="162"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="162"/>
                                 </variation>
                                 <connections>
                                     <action selector="getDate:" destination="vXZ-lx-hvc" eventType="valueChanged" id="tUG-Si-fLa"/>
                                 </connections>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="fgD-Wg-XPG" secondAttribute="centerY" constant="5" id="4rC-rp-3tl"/>
                             <constraint firstAttribute="centerX" secondItem="fgD-Wg-XPG" secondAttribute="centerX" id="751-Um-Zf0"/>
@@ -66,7 +74,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="joJ-RA-3PO"/>
+                                <exclude reference="Ml2-Jc-HgF"/>
                                 <exclude reference="fgD-Wg-XPG"/>
                                 <exclude reference="WlZ-nV-7mB"/>
                                 <exclude reference="hy0-ee-3wz"/>
@@ -80,7 +88,7 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="joJ-RA-3PO"/>
+                                <include reference="Ml2-Jc-HgF"/>
                                 <include reference="fgD-Wg-XPG"/>
                                 <include reference="WlZ-nV-7mB"/>
                                 <include reference="hy0-ee-3wz"/>
@@ -101,10 +109,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27" y="282"/>
+            <point key="canvasLocation" x="46.5" y="281"/>
         </scene>
     </scenes>
     <resources>
-        <image name="background2.png" width="640" height="1136"/>
+        <image name="background" width="1300" height="2312"/>
+        <image name="start.png" width="173" height="56"/>
+        <image name="stop.png" width="173" height="56"/>
     </resources>
 </document>
